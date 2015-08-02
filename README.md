@@ -1,3 +1,3 @@
 # AV1AS
-[x] Criar repositório
-[ ] Criar classes
+
+* (Wiki)[https://github.com/privacy-policy/AV1AS/wiki]
