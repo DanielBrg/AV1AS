@@ -1,3 +1,4 @@
 # AV1AS
 
-* [Wiki](https://github.com/privacy-policy/AV1AS/wiki)
+* [Requisitos iniciais](https://github.com/privacy-policy/AV1AS/wiki)
+* [Requisitos propostos](https://github.com/privacy-policy/AV1AS/wiki/Requisitos-propostos)
