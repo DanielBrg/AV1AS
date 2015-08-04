@@ -1,28 +1,27 @@
 package entidades;
 
 import entidades.abstratas.Veiculo;
-import util.veiculo.Cambio;
 import util.veiculo.Cor;
-import util.veiculo.Modelo;
-import util.veiculo.Montadora;
-import util.veiculo.Tipo;
+import util.veiculo.MotoMontadora;
+import util.veiculo.MotoModelo;
+import util.veiculo.MotoTipo;
 
 public class Motocicleta extends Veiculo {
+	private MotoMontadora montadora;
+	private MotoModelo modelo;
+	private MotoTipo tipo;
 	private int cilidrada;
 	private int capacidadeTanque;
 
-	public Motocicleta() {
-		super();
-	}
 
-	public Motocicleta(String chassi) {
-		super(chassi);
-	}
-
-	public Motocicleta(String chassi, Montadora montadora, Modelo modelo, Tipo tipo,
-			Cor cor, Cambio cambio, float preco, int cilindrada, int capacidadeTaque) {
-		super(chassi, montadora, modelo, tipo, cor, cambio, preco);
-		this.setCilidrada(cilindrada).setCapacidadeTanque(capacidadeTaque);
+	public Motocicleta(String chassi, MotoMontadora montadora, MotoModelo modelo, MotoTipo tipo,
+			Cor cor, int cilindrada, int capacidadeTaque, float preco) {
+		super(chassi, cor, preco);
+		this.montadora = montadora;
+		this.modelo = modelo;
+		this.tipo = tipo;
+		this.cilidrada = cilindrada;
+		this.capacidadeTanque = capacidadeTaque;
 	}
 
 	public int getCilidrada() {
@@ -41,5 +40,10 @@ public class Motocicleta extends Veiculo {
 	public Motocicleta setCapacidadeTanque(int capacidadeTanque) {
 		this.capacidadeTanque = capacidadeTanque;
 		return this;
+	}
+	
+	public String getDadosMoto() {
+		return super.getChassi() + " - " + this.montadora + " - " + this.modelo + " - " + this.tipo + " - "
+			+ super.getCor() + " - " + this.cilidrada + " - " + this.capacidadeTanque + " - " + super.getPreco();
 	}
 }

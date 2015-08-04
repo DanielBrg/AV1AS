@@ -1,11 +1,11 @@
 package util.veiculo;
 
-public enum Modelo {
+public enum CarroModelo {
 	ADVENTURE(1), NORMAL(2), OFFROAD(3), TRACKER(4);
 
 	private final int modelo;
 
-	Modelo(int modelo) {
+	CarroModelo(int modelo) {
 		this.modelo = modelo;
 	}
 
