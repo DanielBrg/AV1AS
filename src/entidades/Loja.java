@@ -1,6 +1,7 @@
 package entidades;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Loja {
 	String nome;
@@ -37,4 +38,23 @@ public class Loja {
 		}
 	}
 	
+	public void buscarChassiCarro(String buscar) {
+		for (Carro carro : this.estoqueCarros) {
+			if(carro.getChassi().equals(buscar)) {
+				System.out.println("\n>>> O carro foi encontrado:\n" + carro.getDadosCarro() + "\n");
+				return;
+			}
+		}
+		System.out.println("\n>>> O carro não foi encontrado...\n");
+	}
+	
+	public void buscarChassiMoto(String buscar) {
+		for (Motocicleta moto : this.estoqueMotos) {
+			if(moto.getChassi().equals(buscar)) {
+				System.out.println("\n>>> A moto foi encontrada:\n" + moto.getDadosMoto() + "\n");
+				return;
+			}
+		}
+		System.out.println("\n>>> A moto não foi encontrada...\n");
+	}
 }

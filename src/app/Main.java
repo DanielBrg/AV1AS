@@ -41,20 +41,30 @@ public class Main {
 		
 		while(true) {	
 			System.out.println("\nBem-vindo à " + loja1.getNomeLoja() + " [" + loja1.getEndLoja() + "]\n");
-			System.out.println("Menu:\n\n 1 - Listar estoque de Carros\n 2 - Listar estoque de Motos\n 0 - Sair");
+			System.out.println("Menu:\n\n 1 - Listar estoque de Carros\n 2 - Listar estoque de Motos\n 3 - Buscar Carro pelo chassi \n 4 - Buscar Moto pelo chassi \n 0 - Sair");
 			System.out.print("\nEscolha a sua opção: ");
-	        int opt = scanner.nextInt();
+	        String opt = scanner.next();
 	        switch (opt) {
-	            case 0:
-	            	System.out.println("\nSaindo...\n");
+	            case "0":
+	            	System.out.println("\n>>> Saindo...\n");
 	            	return;
-	            case 1:
+	            case "1":
 	            	loja1.listarEstoquedeCarros();
 	            	break;
-	            case 2:
+	            case "2":
 	            	loja1.listarEstoquedeMotos();
 	            	break;
-	            default: System.out.println("\nEsta opção não existe... tente novamente.\n");
+	            case "3":
+	            	System.out.print("\nDigite o chassi do Carro: ");
+	            	String buscarCarro = scanner.next();
+	            	loja1.buscarChassiCarro(buscarCarro);
+	            	break;
+	            case "4":
+	            	System.out.print("\nDigite o chassi da Moto: ");
+	            	String buscarMoto = scanner.next();
+	            	loja1.buscarChassiMoto(buscarMoto);
+	            	break;
+	            default: System.out.println("\n>>> Esta opção não existe... tente novamente.\n");
 	        }	
 		}
 	}
