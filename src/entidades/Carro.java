@@ -16,8 +16,44 @@ public class Carro extends Veiculo {
 	private float motorizacao;
 	private CarroCambio cambio;
 	
-	public Carro() {
-		
+	public CarroMontadora getMontadora() {
+		return montadora;
+	}
+
+	public void setMontadora(CarroMontadora montadora) {
+		this.montadora = montadora;
+	}
+
+	public CarroModelo getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(CarroModelo modelo) {
+		this.modelo = modelo;
+	}
+
+	public CarroTipo getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(CarroTipo tipo) {
+		this.tipo = tipo;
+	}
+
+	public float getMotorizacao() {
+		return motorizacao;
+	}
+
+	public void setMotorizacao(float motorizacao) {
+		this.motorizacao = motorizacao;
+	}
+
+	public CarroCambio getCambio() {
+		return cambio;
+	}
+
+	public void setCambio(CarroCambio cambio) {
+		this.cambio = cambio;
 	}
 
 	public Carro(String chassi, CarroMontadora montadora, CarroModelo modelo, CarroTipo tipo, Cor cor,
