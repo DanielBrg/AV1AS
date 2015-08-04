@@ -1,23 +1,37 @@
 package entidades;
 
 import entidades.abstratas.Veiculo;
-import util.veiculo.Cambio;
+
 import util.veiculo.Cor;
-import util.veiculo.Modelo;
-import util.veiculo.Montadora;
-import util.veiculo.Tipo;
+import util.veiculo.CarroModelo;
+import util.veiculo.CarroMontadora;
+import util.veiculo.CarroTipo;
+import util.veiculo.CarroCambio;
 
 public class Carro extends Veiculo {
+	
+	private CarroMontadora montadora;
+	private CarroModelo modelo;
+	private CarroTipo tipo;
+	private float motorizacao;
+	private CarroCambio cambio;
+	
 	public Carro() {
-		super();
+		
 	}
 
-	public Carro(String chassi) {
-		super(chassi);
+	public Carro(String chassi, CarroMontadora montadora, CarroModelo modelo, CarroTipo tipo, Cor cor,
+			float motorizacao, CarroCambio cambio, float preco) {
+		super(chassi, cor, preco);
+		this.montadora = montadora;
+		this.modelo = modelo;
+		this.tipo = tipo;
+		this.motorizacao = motorizacao;
+		this.cambio = cambio;
 	}
-
-	public Carro(String chassi, Montadora montadora, Modelo modelo, Tipo tipo, Cor cor,
-			Cambio cambio, float preco) {
-		super(chassi, montadora, modelo, tipo, cor, cambio, preco);
+	
+	public String getDadosCarro() {
+		return super.getChassi() + " - " + this.montadora + " - " + this.modelo + " - " + this.tipo + " - "
+			+ super.getCor() + " - " + this.motorizacao + " - " + this.cambio + " - " + super.getPreco();
 	}
 }
