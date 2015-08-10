@@ -5,9 +5,15 @@ import java.util.Scanner;
 
 import entidades.*;
 import util.veiculo.*;
+import entidades.abstratas.*;
 
 public class Main {
 	public static void main(String[] args) {
+		
+		Veiculo c1 = VeiculoFactory.criarVeiculo("Carro");
+		Veiculo m1 = VeiculoFactory.criarVeiculo("Motocicleta");
+		c1.setChassi("000001").setCor(Cor.AMARELO).setPreco(100000f);
+		m1.setChassi("000001").setCor(Cor.BRANCO).setPreco(10000f);
 		
 		//new Carro ("Chassi", "Montadora", "Modelo", "Tipo", "Cor", "Cambio", "Preço")
 		Carro carro1 = new Carro("00001", CarroMontadora.CHEVROLET, CarroModelo.ADVENTURE, CarroTipo.COUPE, Cor.AMARELO,2.0f, CarroCambio.AUTOMATICO, 10000);

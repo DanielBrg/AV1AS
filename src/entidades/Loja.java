@@ -1,7 +1,6 @@
 package entidades;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Loja {
 	String nome;
