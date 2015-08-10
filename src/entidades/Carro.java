@@ -70,7 +70,7 @@ public class Carro extends Veiculo {
 		this.cambio = cambio;
 	}
 
-	public String getDadosCarro() {
+	public String getInformacoes() {
 		return super.getChassi() + " - " + this.montadora + " - " + this.modelo + " - " + this.tipo + " - "
 			+ super.getCor() + " - " + this.motorizacao + " - " + this.cambio + " - " + super.getPreco();
 	}

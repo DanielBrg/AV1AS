@@ -10,7 +10,7 @@ public class Motocicleta extends Veiculo {
 	private MotoMontadora montadora;
 	private MotoModelo modelo;
 	private MotoTipo tipo;
-	private int cilidrada;
+	private int cilindrada;
 	private int capacidadeTanque;
 	
 	public Motocicleta () {
@@ -23,7 +23,7 @@ public class Motocicleta extends Veiculo {
 		this.montadora = montadora;
 		this.modelo = modelo;
 		this.tipo = tipo;
-		this.cilidrada = cilindrada;
+		this.cilindrada = cilindrada;
 		this.capacidadeTanque = capacidadeTaque;
 	}
 	
@@ -51,12 +51,12 @@ public class Motocicleta extends Veiculo {
 		this.tipo = tipo;
 	}
 
-	public int getCilidrada() {
-		return cilidrada;
+	public int getCilindrada() {
+		return cilindrada;
 	}
 
-	public void setCilidrada(int cilidrada) {
-		this.cilidrada = cilidrada;
+	public void setCilindrada(int cilindrada) {
+		this.cilindrada = cilindrada;
 	}
 
 	public int getCapacidadeTanque() {
@@ -67,8 +67,8 @@ public class Motocicleta extends Veiculo {
 		this.capacidadeTanque = capacidadeTanque;
 	}
 	
-	public String getDadosMoto() {
+	public String getInformacoes() {
 		return super.getChassi() + " - " + this.montadora + " - " + this.modelo + " - " + this.tipo + " - "
-			+ super.getCor() + " - " + this.cilidrada + " - " + this.capacidadeTanque + " - " + super.getPreco();
+			+ super.getCor() + " - " + this.cilindrada + " - " + this.capacidadeTanque + " - " + super.getPreco();
 	}
 }

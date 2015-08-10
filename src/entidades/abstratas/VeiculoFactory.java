@@ -19,7 +19,6 @@ public abstract class VeiculoFactory {
 			returnObj = null;
 			break;
 		}
-		
 		return returnObj;
 	}
 }
