@@ -41,4 +41,6 @@ public abstract class Veiculo {
 		this.preco = preco;
 		return this;
 	}
+	
+	public abstract String getInformacoes();
 }
