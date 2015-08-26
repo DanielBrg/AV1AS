@@ -1,4 +1,4 @@
-package util.veiculo;
+package com.GADS.av1as.enumeracoes;
 
 public enum MotoMontadora {
 	YAMAHA(1), HONDA(2), KAWASAKI(3), SUZUKI(4), DUCATI(5);

@@ -1,4 +1,4 @@
-package util.veiculo;
+package com.GADS.av1as.enumeracoes;
 
 public enum MotoTipo {
 	CHOPPER(1), CUSTOM(2), SCOOTERS(3), TRACKER(4);

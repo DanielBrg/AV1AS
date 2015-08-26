@@ -1,4 +1,4 @@
-package util.veiculo;
+package com.GADS.av1as.enumeracoes;
 
 public enum MotoModelo {
 	ESTRADEIRA(1), NORMAL(2), OFFROAD(3), ESPORTIVA(4);
