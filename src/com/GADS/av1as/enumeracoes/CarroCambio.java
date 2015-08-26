@@ -1,4 +1,4 @@
-package util.veiculo;
+package com.GADS.av1as.enumeracoes;
 
 public enum CarroCambio {
 	AUTOMATICO(1), MANUAL(2);

@@ -1,4 +1,4 @@
-package util.veiculo;
+package com.GADS.av1as.enumeracoes;
 
 public enum CarroModelo {
 	ADVENTURE(1), NORMAL(2), OFFROAD(3), TRACKER(4);

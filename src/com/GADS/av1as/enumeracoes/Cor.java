@@ -1,4 +1,4 @@
-package util.veiculo;
+package com.GADS.av1as.enumeracoes;
 
 public enum Cor {
 	AMARELO(1), BRANCO(2), PRATA(3), PRETO(4), VERDE(5), VERMELHO(6);
